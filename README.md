@@ -28,7 +28,7 @@ The menu will be available to the customer displaying a list of food items, pric
 
 The customer will be able to call the restaurant, create an order and calculate the total cost for themselves. 
 
-The restuarant will be able to recevie the order, process the order and calculate the sum of the order. Once the order has been accepted, a confirmation text message will be sent to the customer with an approx time for delivery. 
+The restuarant will be able to receive the order, process the order and calculate the sum of the order. Once the order has been accepted, a confirmation text message will be sent to the customer with an approx time for delivery. 
 
 ##class Menu
 
