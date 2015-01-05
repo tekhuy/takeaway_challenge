@@ -24,45 +24,36 @@ Note: We are looking for good OO design and programming! Remember the SOLID prin
 
 ####**Collaboration Responsibilites**
 
-The menu will be available to the customer displaying a list of food items, price for each item, and a phone number for the restaurant.
+The menu will display a list of food items, price for each item, and a phone number for the restaurant.
 
-The customer will be able to call the restaurant, create an order and calculate the total cost for themselves. 
+A customer will be able to create an order which will return the total cost for the order. 
 
 The restuarant will be able to receive the order, process the order and calculate the sum of the order. Once the order has been accepted, a confirmation text message will be sent to the customer with an approx time for delivery. 
 
 ##class Menu
 
-| RESPONSIBILITIES       | COLLABORATORS   |
-|------------------------|-----------------|
-| food item              | Customer, Order |
-| prices                 | Customer, Order |
-| phone number           | Restaurant      |
+| RESPONSIBILITIES       | COLLABORATORS     |
+|------------------------|-------------------|
+| food item              | Order             |
+| prices                 | Order             |
+| phone number           | Restaurant        |
 
 
-##class Customer
+##class Order
 
-| RESPONSIBILITIES       | COLLABORATORS           |
-|------------------------|-------------------------|
-| place order            | Menu, Order             |
-| calculate total        | Order, Restaurant       |
-| confirmation of order  | Order, Restaurant       |
-
-
-##class/module Order (not sure whether to create as a module or class)
-
-| RESPONSIBILITIES       | COLLABORATORS        |
-|------------------------|----------------------|
-| list of food items     | Customer, Restaurant |
-| calculate total        | Customer, Restuarant |
+| RESPONSIBILITIES       | COLLABORATORS     |
+|------------------------|-------------------|
+| list of food items     | Restaurant        |
+| calculate total        | Restuarant        |
 
 
 ##class Restaurant
 
-| RESPONSIBILITIES           | COLLABORATORS        |
-|----------------------------|----------------------|
-| receive list of food items | Customer, Order      |
-| calculate total            | Customer, Order      |
-| send confirmation text     | Customer             |
+| RESPONSIBILITIES           | COLLABORATORS |
+|----------------------------|---------------|
+| receive list of food items | Order         |
+| calculate total            | Order         |
+| send confirmation text     |               |
 
 
 
