@@ -54,14 +54,3 @@ The restuarant will be able to receive the order, process the order and calculat
 | receive list of food items | Order         |
 | calculate total            | Order         |
 | send confirmation text     |               |
-
-
-
-
-
-
-
-
-
-
-
