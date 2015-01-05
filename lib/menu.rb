@@ -3,24 +3,20 @@ class Menu
   attr_reader :menu
 
   def initialize
-    @menu = [
-      { pizza: "Margherita", price: 7 },
-      { pizza: "Hawaiian", price: 8 },
-      { pizza: "Pepperoni", price: 9 }, 
-      { pizza: "Meat_feast", price: 10 }
-    ]
+    @menu = { 
+      "Margherita" => 7, 
+      "Hawaiian" => 8,
+      "Pepperoni" => 9 , 
+      "Meat_feast" => 10
+    }
   end
 
   def price(item)
-    if chosen_pizza = @menu.find{ |pizza| pizza[:pizza] == item }
-      return chosen_pizza[:price]
-    else
-      raise "Sorry we do not sell this item!"
-    end
+    @menu[item]
   end
 
   def display_menu
-    @menu.map{|item| puts "#{item[:pizza]}: £#{item[:price]}"}
+    @menu.each{ |item, price| puts "#{item}: £#{price}"}
   end
 
 end
