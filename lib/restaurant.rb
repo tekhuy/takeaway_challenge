@@ -1,4 +1,4 @@
-class Restaurant
+rmclass Restaurant
 
   def view_menu(restaurant)
     restaurant.display_menu
