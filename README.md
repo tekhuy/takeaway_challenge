@@ -43,7 +43,7 @@ The restuarant will be able to receive the order, process the order and calculat
 
 | RESPONSIBILITIES       | COLLABORATORS           |
 |------------------------|-------------------------|
-| place order            | Menu, Restuarant, Order |
+| place order            | Menu, Order             |
 | calculate total        | Order, Restaurant       |
 | confirmation of order  | Order, Restaurant       |
 
